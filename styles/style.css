@@ -180,7 +180,7 @@ h1 {
 .aboutUsImage img {
     border: 15px solid white;
     /* margin-left: 20%; */
-    width: 100%;
+    max-width: 400px;
 }
 
 .aboutUsInfo {
