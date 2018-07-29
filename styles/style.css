@@ -112,12 +112,13 @@ h3 {
 .navBarRight li:nth-last-child(-n+2) {font-size: 1.25rem}
 
 .header {
-    padding: 25vw 0;
+    
     background-image: url("assets/home-1.jpeg");
     /* position: relative; */
     /* background-repeat:no-repeat;
     background-position: center center; */
     
+    padding: 25vw 0;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -604,6 +605,118 @@ footer {
     display: inline;
     margin-left: 40px;
 } 
+
+/* ------------ BLOG -------------0*/
+
+
+.blogBackground {
+    background-image: url("assets/blog-1.jpeg");
+    padding: 25vw 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.blogOuter {
+    margin: 50px auto;
+    z-index: 1;
+    margin-top: -88px;
+}
+
+
+.blogWrapper {
+    max-width: 1270px;
+    position: relative;
+    background-color: #fff;
+}
+
+.blogMain {
+    background-color: #eeeeee;
+}
+
+.blogInner {
+    margin: 50px auto;
+}
+
+.blogHeader {
+    text-align: center;
+    width: 60%;
+}
+
+.blogHeader h1 {
+    font-size: 2.25rem;
+    margin: 2% 0;
+}
+
+.blogHeader p {
+    font-size: 0.875rem;
+}
+
+.blogHeader a {
+    text-decoration: none;
+}
+
+.blogWriter {
+    width: 40%;
+    float: left;
+}
+
+.blogWriter figure {
+    display: inline-block;
+    width: 20%;
+}
+
+.blogWriter figure, .blogUpperContent {
+    vertical-align: middle;
+}
+.blogWriter img {
+    border-radius: 50%;
+}
+
+.blogUpperDateCategoryTags {
+    width: 60%;
+    float: left;
+}
+
+.blogUpperContent {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
