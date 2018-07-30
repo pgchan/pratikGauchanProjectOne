@@ -18,12 +18,17 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
     overflow: auto;
 }
 
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+}
+
 body {
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     text-rendering: optimizeLegibility;
-    /* font-size: 14px; */
 }
 /* fonts
 font-family: 'Poppins', sans-serif;
@@ -53,6 +58,11 @@ h3 {
     text-transform: uppercase;
     font-size: 1rem;
 }
+
+p, footer {
+    font-size: 0.875rem;
+}
+
 /* ----------- NAVBAR --------- */
 
 .navBar {
@@ -220,9 +230,9 @@ h1 {
     letter-spacing: -1px;
 }
 
-.aboutUsInfoInner p{
+.aboutUsInfoInner p {
     line-height: 30px;
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
     padding: 4% 15% 2% 0;
     color: #999999;
 }
@@ -499,7 +509,7 @@ h1 {
 }
 
 .contactPhone p {
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
     color: #999999;
     font-weight: 600;
 }
@@ -507,13 +517,14 @@ h1 {
 .contactPhone h1 {
     font-size: 2.25rem;
 }
+
 /* ---------- FOOTER ----------- */
 
 footer {
     background-color: #212020;
     color: #999999;
     text-transform: capitalize;
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
 }
 
 .footerTop {
@@ -524,6 +535,11 @@ footer {
 .footerBar a {
     text-decoration: none;
     color: #999999;
+}
+
+.footerBar a:hover,
+.fa-paper-plane:hover {
+    color: #fff;
 }
 
 .footerDirectory {
@@ -580,6 +596,10 @@ footer {
     font-size: 0.9rem;
 }
 
+.emailDiv i {
+    size: 1.042rem;
+}
+
 .footerTopRight p, .emailButton input, .emailDiv button {
     padding-bottom: 10px;
 }
@@ -601,10 +621,16 @@ footer {
     text-align: right;
 }
 
+.socialMediaIcons i {
+    color: #fff;
+}
+
 .socialMediaIcons li{
     display: inline;
     margin-left: 40px;
 } 
+
+
 
 /* ------------ BLOG -------------0*/
 
@@ -632,10 +658,20 @@ footer {
 
 .blogMain {
     background-color: #eeeeee;
+    padding-bottom: 6%;
+}
+
+.blogMain h3 {
+    text-transform: none;
 }
 
 .blogInner {
     margin: 50px auto;
+}
+
+.blogInner p {
+    /* font-size: 0.875rem; */
+    color:  #999999;
 }
 
 .blogHeader {
@@ -649,7 +685,8 @@ footer {
 }
 
 .blogHeader p {
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
+    margin: 7%;
 }
 
 .blogHeader a {
@@ -682,24 +719,186 @@ footer {
     display: inline-block;
 }
 
+.blogUpperContent h3, .relatedPostsGallery h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.125rem;
+    /* text-transform: capitalize; */
+    color: #000;
+}
 
+.blogUpperContent p {
+    font-size: 0.813rem;
+    color:  #999999;
+}
 
+.blogContentTop {
+    padding: 2.5% 0 2% 0;
+    border-bottom: 1px solid lightgrey;
+}
 
+.blogContentMain {
+    margin: 4.5% auto 2% auto;
+}
 
+.blogContentMain p {
+    /* font-size: 0.875rem; */
+    line-height: 1.714;
+    padding-bottom: 2.5%;
+}
 
+.blogContentMain p:first-of-type {
+    color: #000;
+}
 
+.blogContentSocialMedia {
+    margin: 1% auto 5% auto;
+}
 
+.blogShare {
+    float: left;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    margin-right: 2%;
+}
 
+.blogShare p {
+    font-size: 1.125rem;
+    color: #000;
+}
 
+.blogSocialMediaIcons {
+    float: left;
+    width: 50%;
+}
 
+.blogSoialMediaIcons a:visited {
+    color: #999999;
+    text-decoration: none;
+}
 
+.blogSocialMediaIcons i {
+    vertical-align: middle;
+    margin-right: 1.5%;
+    color: #000;
+}
 
+.fa-twitter:hover {
+    color: #1da1f2;
+}
 
+.fa-instagram:hover {
+    color: #c32aa3;
+}
 
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
 
+.fa-google-plus-g:hover {
+    color: #db4437;
+}
 
+.blogInner h2 {
+    font-family: 'Playfair Display', serif;
+    /* color:  rgba(0, 0, 0, 0.15); */
+    font-size: 1.875rem;
+}
 
+.relatedPostsHeader {
+    padding-bottom: 1.5%;
+    margin: 4% 0 4% 0;
+    border-bottom: 1px solid lightgrey;
+}
 
+.relatedPostColumns {
+    width: 31.62%;
+    float: left;
+}
+
+.relatedPostColumns img {
+    display: block;
+}
+
+.relatedPostSecond {
+    margin: 0 2.57%;
+}
+
+.relatedPostsGallery {
+    margin-top: 4.5%;
+}
+
+.relatedPostsGallery h3 {
+    text-transform: none;
+}
+
+.relatedPostsContent {
+    background-color: lightgrey;
+}
+
+.relatedPostsContentInner {
+    padding: 3.5%;
+    margin-left: 4.5%;
+}
+
+.relatedPostsContentInner p {
+    margin: 3.5% auto 2% auto;
+}
+
+.relatedPostsContentInner h3 {
+    margin-bottom: 9%;
+}
+
+.relatedPostsContentInner a {
+    text-decoration: none;
+}
+
+.relatedPostsContentInner h3:hover {
+    text-decoration: underline;
+} 
+
+.relatedPostsContentInner button {
+    font-size: 0.813rem;
+    background: transparent;
+    border: none;
+    color:#999999;
+    font-weight: 600;
+    padding-bottom: 4.5%;
+}
+
+.relatedPostsContentInner button:hover {
+    color: #000;
+}
+
+/* 02 comments section */
+
+.commentersPhotos figure {
+    float: left;
+    width: 7.7%;
+}
+
+.commentContent {
+    float: left;
+    width: 92.30%;
+}
+
+.blogInner .contactPageButton button {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 1.5% 4.5%;
+    text-decoration: none;
+    background-color: #84a016;
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+.blogInner .leaveACommentHeader {
+    padding-bottom: 2%;
+    border-bottom: 1px solid #999999;
+}
+
+.blogInner .userInputTopRow {
+    margin-top: 4%;
+}
 
 
 
@@ -745,7 +944,7 @@ footer {
 
 .contactPagePhone, .contactPageAddress, .contactPageEmail {
     display: inline-block;
-    width: 33.1%;
+    width: 33%;
     /* padding-left: 6%; */
     padding: 4.5% 0 3.5% 6%;
 }
@@ -755,7 +954,7 @@ footer {
 }
 
 .contactPageDetails p {
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
     color: #999999;
     width: 50%;
     float: left;
@@ -793,7 +992,7 @@ footer {
 }
 
 .getInTouch p {
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
     color: #999999;
     margin: 1.5% 0;
 }
@@ -846,7 +1045,6 @@ footer {
 }
 
 .contactPageButton button {
-    font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 5%;
