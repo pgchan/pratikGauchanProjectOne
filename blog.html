@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-
+    
     <title>Destination Sunshine - Reserve</title>
 </head>
 
@@ -57,30 +57,25 @@
             
                 <section class="blogContent">
                     <section class="blogContentTop clearfix">
-                        <section class="blogWriter">
-                            <figure>
-                                <img src="styles/assets/blog-2.jpeg" alt="picture of the blog's author">
-                            </figure>
-                            <div class="blogUpperContent">
-                                <h3>Alex Furguson</h3>
-                                <p>Admin</p>
-                            </div>
-                        </section>
-                
-                        <section class="blogUpperDateCategoryTags">
-                            <div class="blogUpperContent">
-                                <h3>Date</h3>
-                                <p>June 19th, 2018</p>
-                            </div>
-                            <div class="blogUpperContent">
-                                <h3>Category</h3>
-                                <p>Travel, Life style</p>
-                            </div>
-                            <div class="blogUpperContent">
-                                <h3>Tags</h3>
-                                <p>Hotel, magazine, top</p>
-                            </div>
-                        </section>
+                        <figure>
+                            <img src="styles/assets/blog-2.jpeg" alt="picture of the blog's author">
+                        </figure>
+                        <div class="blogUpperContent">
+                            <h3>Alex Furguson</h3>
+                            <p>Admin</p>
+                        </div>
+                        <div class="blogUpperContent">
+                            <h3>Date</h3>
+                            <p>June 19th, 2018</p>
+                        </div>
+                        <div class="blogUpperContent">
+                            <h3>Category</h3>
+                            <p>Travel, Life style</p>
+                        </div>
+                        <div class="blogUpperContent">
+                            <h3>Tags</h3>
+                            <p>Hotel, magazine, top</p>
+                        </div>
                     </section>
                     <section class="blogContentMain">
                         <p>
@@ -121,7 +116,7 @@
                 </section>
                 
                 <section class="relatedPosts">
-                    <section class="relatedPostsHeader">
+                    <section class="relatedPostsHeader blogHeaders">
                         <h2>Related Posts</h2>
                     </section>
                     <section class="relatedPostsGallery">
@@ -165,7 +160,7 @@
                 </section>
                 
                 <section class="blogComments">
-                    <section class="blogCommentsHeader">
+                    <section class="blogCommentsHeader blogHeaders">
                         <h2>02 Comments</h2>
                     </section>
                     <section class="blogCommentsContent">
@@ -174,9 +169,11 @@
                                 <img src="styles/assets/blog-6.jpeg" alt="photo of the first commenter">
                             </figure>
                             <section class="commentContent">
-                                <h3>Daniel Vandaft - Reply</h3>
-                                <p>Pretty excursion website pretty fun excursion excursion fun. Colorful traveler theme blogger fun, website blogger design organized travelblogger.
-                                <p>Jul 17,2015 at 15 hours ago</p>
+                                <section class="commentContentInner">
+                                    <p>Daniel Vandaft - <span class="commentReply">Reply</span></p>
+                                    <p>Pretty excursion website pretty fun excursion excursion fun. Colorful traveler theme blogger fun, website blogger design organized travelblogger.
+                                    <p>Jul 17,2015 at 15 hours ago</p>
+                                </section>
                             </section>
                         </section>
                         <section class="secondComment commentersPhotos clearfix">
@@ -184,16 +181,18 @@
                                 <img src="styles/assets/blog-7.jpeg" alt="photo of the first commenter">
                             </figure>
                             <section class="commentContent">
-                                <h3>Jenifer Loopz - Reply</h3>
-                                <p>Pretty excursion website pretty fun excursion excursion fun. Colorful traveler theme blogger fun, website blogger design organized travelblogger.
-                                <p>Jul 17,2015 at 15 hours ago</p>
+                                <section class="commentContentInner">
+                                    <p>Jenifer Loopz - <span class="commentReply">Reply</span></p>
+                                    <p>Pretty excursion website pretty fun excursion excursion fun. Colorful traveler theme blogger fun, website blogger design organized travelblogger.
+                                    <p>Jul 17,2015 at 15 hours ago</p>
+                                </section>
                             </section>
                         </section>
                     </section>
                 </section>
                 
                 <section class="leaveAComment">
-                    <section class="leaveACommentHeader">
+                    <section class="leaveACommentHeader blogHeaders">
                         <h2>Leave A Comment</h2>
                     </section>
                     <section class="userInput">
@@ -209,10 +208,11 @@
                             </div>
                         </section>
                         <section class="userInputBottomRow">
-                            <input type="text" alt="This is where you write your message." class="contactPageMessageInput" placeholder="Here goes your message">
+                            <!-- <input type="text" alt="This is where you write your message." class="contactPageMessageInput" placeholder="Here goes your message"> -->
+                            <textarea name="specialInstructions" cols="10" rows="8" placeholder="Here goes your comment"></textarea>
                         </section>
                         <section class="contactPageButton">
-                            <button>send message</button>
+                            <button type="submit">send message</button>
                         </section>
                     </section>
                 </section>
