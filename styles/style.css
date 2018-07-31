@@ -92,6 +92,7 @@ p, footer {
     width: 35%;
     float: right;
     text-align: right;
+    margin-top: 2%;
 }
 .navBarRight ul li {
     /* height: 20px; */
@@ -99,25 +100,33 @@ p, footer {
 }
 
 /* .navBarRight li:nth-child(-n + 2) {margin-top: 10%} */
+/* .navBarRight a:last-child { margin-right: 5px } */
+
+
 
 .navBarRight a { margin-left: 39px }
 
-/* .navBarRight a:last-child { margin-right: 5px } */
+/* 
+
+.fa-search { padding: 1px } */
+
+
+
 
 .navBarRight li:nth-last-child(-n+2) {font-size: 1.25rem}
 
-.fa-search { padding: 1px }
 
-.shoppingCart { 
-    display: inline-block;
+.cart { 
+    /* display: inline-block; */
     position: relative;
+    padding-right: 10px
 }
 
 .shoppingCart li {
     padding-right: 8px;
 }
 
-.shoppingCart p {
+.cart p {
     display: inline-block;
     background-color: #a4f1dc;
     height: 17px;
@@ -127,8 +136,8 @@ p, footer {
     padding-top: 3px;
     font-size: .531rem;
     position: absolute;
-    top: 15px;
-    left: 48px;
+    top: 13px;
+    left: 49px;
 
     /* top: 86px;
     right: 0px; */
@@ -137,6 +146,15 @@ p, footer {
 .search, .shoppingCart {
     margin-top: 5px;
 }
+
+
+
+
+
+
+
+
+
 
 
 .header {    
@@ -268,7 +286,10 @@ h1 { font-family: 'Playfair Display', serif }
     position: absolute;
     left: 0;
     font-size: 2.25rem;
-    
+}
+
+.fa-plane {
+    transform: rotate(-45deg);
 }
 
 .contentRightColumn {
@@ -885,12 +906,26 @@ footer {
 
 .commentContent {
     float: right;
-    width: 91%;
-    background: #f6f6f6;
+    width: 92.3%;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 0;
+    background-color: transparent;
+    border-top: 10px solid transparent;
+    border-right: 30px solid #f6f6f6;
+    border-bottom: 10px solid transparent;
 }
 
 .commentContentInner {
     padding: 1.5% 2% 4% 2%;
+    width: 98%;
+    float: right;
+    background: #f6f6f6;
 }
 
 .commentContentInner p:first-child {
