@@ -71,6 +71,7 @@ p, footer {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.85rem;
+    margin-top: 1.5%;
 }
 
 .navBarLeft {
@@ -93,15 +94,15 @@ p, footer {
     text-align: right;
 }
 .navBarRight ul li {
-    height: 20px;
+    /* height: 20px; */
     /* padding-bottom: 10px; */
 }
 
-.navBarRight li:nth-child(-n + 2) {margin-top: 10%}
+/* .navBarRight li:nth-child(-n + 2) {margin-top: 10%} */
 
-.navBarRight a { margin-left: 35px }
+.navBarRight a { margin-left: 39px }
 
-.navBarRight a:last-child { margin-right: 5px }
+/* .navBarRight a:last-child { margin-right: 5px } */
 
 .navBarRight li:nth-last-child(-n+2) {font-size: 1.25rem}
 
@@ -126,12 +127,17 @@ p, footer {
     padding-top: 3px;
     font-size: .531rem;
     position: absolute;
-    top: 21px;
+    top: 15px;
     left: 48px;
 
     /* top: 86px;
     right: 0px; */
 }
+
+.search, .shoppingCart {
+    margin-top: 5px;
+}
+
 
 .header {    
     background-image: url("assets/home-1.jpeg");
@@ -506,8 +512,9 @@ footer {
 }
 
 .footerTop {
-    padding: 70px 0;
+    padding: 80px 0 60px 0;
     border-bottom: 1px solid #999999;
+    line-height: 1.7;
 }
 
 .footerBar a {
@@ -608,7 +615,6 @@ footer {
     display: inline;
     margin-left: 40px;
 } 
-
 
 
 /* ------------ BLOG -------------0*/
@@ -799,8 +805,14 @@ footer {
 .relatedPostColumns {
     width: 31.62%;
     float: left;
-    margin-bottom: 1%;
+    margin-bottom: 6%;
 }
+
+.relatedPostColumns:hover {
+    box-shadow: 0px 7px 12px -2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1); */
+}
+
 
 .relatedPostColumns img {
     display: block;
@@ -818,9 +830,9 @@ footer {
     text-transform: none;
 }
 
-.relatedPostsContent {
+/* .relatedPostsContent {
     background-color: lightgrey;
-}
+} */
 
 .relatedPostsContentInner {
     padding: 3.5%;
@@ -859,7 +871,7 @@ footer {
 /* 02 comments section */
 
 .blogCommentsHeader {
-    margin-top: 8%;
+    margin-top: 2%;
 }
 
 .firstComment {
@@ -1070,6 +1082,7 @@ textarea {
     width: 100%;
     border: none;
     border-bottom: 1px solid #999999;
+    resize: none;
 }
 
 .getInTouch textarea {
