@@ -621,6 +621,10 @@ footer {
     margin: 4% auto;
 }
 
+.innerWrapper {
+    padding: 0 50px;
+}
+
 .blogInner p {
     color:  #999999;
 }
@@ -675,7 +679,6 @@ footer {
 .blogContentTop div:nth-of-type(4) {
     width: 17%
 }
-
 
 .blogContentTop {
     padding: 2.5% 0 2% 0;
@@ -766,6 +769,12 @@ footer {
 .blogHeaders {
     padding-bottom: 1.5%;
     margin: 4% 0 4% 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.relatedPostsHeader h2 {
+    padding-bottom: 1.5%;
+    margin: 4% 0 0% 0;
     border-bottom: 1px solid lightgrey;
 }
 
@@ -901,12 +910,19 @@ footer {
     margin-bottom: 2%;
 }
 
-.blogInner .contactPageButton button:hover { background-color: #a9cd1c}
+.blogInner .contactPageButton button:hover { 
+    background-color: #a9cd1c
+}
 
 /* leave comment */
 
 .leaveACommentHeader {
     margin-top: 8.5%;
+    margin-bottom: 6%
+}
+
+.blogInner textarea {
+    margin-top: 2%;
 }
 
 /* ---------- CONTACT PAGE -------- */
